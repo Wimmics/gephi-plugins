@@ -63,7 +63,7 @@ public class SemanticWebImportParser implements LongTaskListener {
      * @param properties Parameters to use.
      * @sa waitEndpopulateRDFGraph
      */
-    public final void populateRDFGraph(SparqlDriver driverUsed, Properties properties, LongTaskListener listener) {
+    public final void populateRDFGraph(SparqlDriver<?> driverUsed, Properties properties, LongTaskListener listener) {
         this.listener = listener;
         boolean resetWorkspace = Boolean.parseBoolean(properties.getProperty(PluginProperties.RESET_WORKSPACE.getValue(), "false"));
         boolean postProcessing = Boolean.parseBoolean(properties.getProperty(PluginProperties.POST_PROCESSING.getValue(), "false"));

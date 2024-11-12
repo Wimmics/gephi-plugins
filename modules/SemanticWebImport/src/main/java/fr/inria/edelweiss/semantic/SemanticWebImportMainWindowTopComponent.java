@@ -881,7 +881,7 @@ public final class SemanticWebImportMainWindowTopComponent extends TopComponent 
                 String panelClassName = sparqlDriver.getParameters().getPanelClassName();
                 ClassLoader loader = Lookup.getDefault().lookup(ClassLoader.class);
                 Constructor<?> constructor = loader.loadClass(panelClassName).getDeclaredConstructor(sparqlDriver.getParameters().getClass());
-                DriverParametersPanel newPanel = (DriverParametersPanel) constructor.newInstance(sparqlDriver.getParameters());
+                DriverParametersPanel<SparqlDriverParameters> newPanel = (DriverParametersPanel<SparqlDriverParameters>) constructor.newInstance(sparqlDriver.getParameters());
                 if (newPanel != null) {
                     newPanel.setParameters(parameters);
                     parametersPanel.add(newPanel);
@@ -890,7 +890,7 @@ public final class SemanticWebImportMainWindowTopComponent extends TopComponent 
                 }
 
                 parameters.addObserver(newPanel);
-                parameters.addObserver(sparqlDriver);
+//                parameters.addObserver(sparqlDriver);
             } catch (IllegalArgumentException ex) {
                 Exceptions.printStackTrace(ex);
             } catch (InvocationTargetException ex) {
