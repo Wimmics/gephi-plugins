@@ -188,8 +188,5 @@ public class CoreseDriver extends SparqlDriver<CoreseDriverParameters> {
         return "Local Driver - Corese";
     }
 
-    @Override
-    public void update(Observable o, Object arg) {
 
-    }
 }

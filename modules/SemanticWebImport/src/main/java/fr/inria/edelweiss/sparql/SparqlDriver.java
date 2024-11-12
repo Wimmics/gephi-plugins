@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 /**
  * Responsible for applying a SPARQL request on data which can be local or remote.
  */
-public abstract class SparqlDriver<P extends SparqlDriverParameters> implements SparqlRequester, Observer {
+public abstract class SparqlDriver<P extends SparqlDriverParameters> implements SparqlRequester{
 
     private static final Logger logger = Logger.getLogger(SparqlDriver.class.getName());
     private P parameters;
