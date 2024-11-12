@@ -202,7 +202,7 @@ graphModel = Lookup.getDefault().lookup(GraphController).getModel()
 fa2.setGraphModel(graphModel)
 fa2.setAdjustSizes(True) # To prevent overlap
 
-print "executing layout"
+print("executing layout")
 # Run the layout.
 fa2.initAlgo()
 for i in range(5000):

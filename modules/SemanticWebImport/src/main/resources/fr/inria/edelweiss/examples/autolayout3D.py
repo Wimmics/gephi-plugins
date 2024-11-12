@@ -34,14 +34,14 @@ graphModel = Lookup.getDefault().lookup(GraphController).getModel()
 fa2.setGraphModel(graphModel)
 fa2.setAdjustSizes(True) # To prevent overlap
 
-print "setting z coordinates"
+print("setting z coordinates")
 ### Setting a random z coordinate on each node
 import random
 graph = graphModel.getGraph()
 for n in graph.getNodes():
   n.getNodeData().setZ(graph.getDegree(n)*10)
 
-print "executing layout"
+print("executing layout")
 # Run the layout.
 fa2.initAlgo()
 for i in range(5000):
