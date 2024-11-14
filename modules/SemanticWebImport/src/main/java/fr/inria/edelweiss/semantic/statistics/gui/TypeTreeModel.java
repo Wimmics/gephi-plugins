@@ -29,7 +29,7 @@ public class TypeTreeModel extends AbstractTreeTableModel implements TreeTableMo
     // Some convenience methods.
     //
     protected TypeTreeNode[] getChildren(TypeTreeNode node) {
-        return ((TypeTreeNode) node).getChildren();
+        return node.getChildren();
     }
 
     //
@@ -71,7 +71,7 @@ public class TypeTreeModel extends AbstractTreeTableModel implements TreeTableMo
     }
 
     @Override
-    public Class getColumnClass(int column) {
+    public Class<?> getColumnClass(int column) {
         return cTypes[column];
     }
 

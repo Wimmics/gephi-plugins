@@ -110,7 +110,4 @@ public class SparqlRestEndPointDriver extends SparqlDriver<SparqlRestEndPointDri
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
-	@Override
-	public void update(Observable o, Object arg) {
-	}
 }
