@@ -4,6 +4,10 @@ This plugin is developped inside [Inria](http://www.inria.fr), by the [Wimmics](
 
 This plugin is made available through the [CeCILL-B licence](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html).
 
+# Installation
+
+**Follow the procedure described at https://github.com/Wimmics/update-semanticwebimport**
+
 # Versions
 
 - SemanticWebImport: 1.4.0
